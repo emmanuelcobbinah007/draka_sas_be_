@@ -131,7 +131,7 @@ API Docs JSON: http://localhost:8080/api-docs
 
 4. Now you can test all endpoints!
 
-## 🧪 Testing Workflow
+## Testing Workflow
 
 ### 1. Login as Admin
 
@@ -228,7 +228,7 @@ POST /api/lecturer/enrollment-requests/process
 }
 ```
 
-## 🛠️ VS Code Setup
+## VS Code Setup
 
 ### Recommended Extensions
 
@@ -268,7 +268,7 @@ Create `.vscode/settings.json`:
 }
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: Port 8080 already in use
 
@@ -317,7 +317,7 @@ mvn clean install -U
 mvn clean install -DskipTests
 ```
 
-## 📊 Database Management
+## Database Management
 
 ### Connect to Neon via VS Code
 
@@ -351,16 +351,16 @@ Expected tables:
 - courses
 - allocations
 
-## 🎯 Next Steps
+## Next Steps
 
-1. ✅ Complete setup steps above
-2. ✅ Test login endpoint
-3. ✅ Run sample data script
-4. ✅ Test full workflow (student enrollment)
-5. 📱 Build frontend application (React/Angular/Vue)
-6. 🚀 Deploy to production
+1. Complete setup steps above
+2. Test login endpoint
+3. Run sample data script
+4. Test full workflow (student enrollment)
+5. Build frontend application (React/Angular/Vue)
+6. Deploy to production
 
-## 📚 Additional Resources
+## Additional Resources
 
 - **Spring Boot Docs**: https://spring.io/projects/spring-boot
 - **Spring Security**: https://spring.io/projects/spring-security
@@ -368,7 +368,7 @@ Expected tables:
 - **Neon PostgreSQL**: https://neon.tech/docs
 - **Swagger/OpenAPI**: https://swagger.io/docs/
 
-## 🆘 Getting Help
+## Getting Help
 
 If you encounter issues:
 
@@ -377,7 +377,3 @@ If you encounter issues:
 3. Check `API_TESTING_GUIDE.md` for API examples
 4. Verify database connection
 5. Ensure all dependencies are installed
-
----
-
-**Happy Coding! 🎉**

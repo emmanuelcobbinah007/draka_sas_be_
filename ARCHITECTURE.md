@@ -1,6 +1,6 @@
 # Project Architecture & Design Documentation
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Layered Architecture
 
@@ -40,7 +40,7 @@ The application follows a clean, layered architecture:
 └──────────────────────────────────────────┘
 ```
 
-## 📦 Package Structure
+## Package Structure
 
 ```
 com.draka/
@@ -109,7 +109,7 @@ com.draka/
 └── StudentAllocationSystemApplication.java
 ```
 
-## 🔐 Security Architecture
+## Security Architecture
 
 ### JWT Authentication Flow
 
@@ -154,7 +154,7 @@ URL Pattern              | Required Role(s)
 - **Storage**: Never stored in plain text
 - **Validation**: Automatic via Spring Security
 
-## 🗄️ Database Design
+## Database Design
 
 ### Entity Relationship Diagram
 
@@ -211,7 +211,7 @@ URL Pattern              | Required Role(s)
 5. **Semester ↔ Course**: One-to-Many
    - Courses offered in specific semesters
 
-## 🔄 Business Workflows
+## Business Workflows
 
 ### 1. Course Enrollment Workflow
 
@@ -273,7 +273,7 @@ Student                  System                    Lecturer
 6. Return created user
 ```
 
-## 📋 API Design Principles
+## API Design Principles
 
 ### RESTful Conventions
 
@@ -315,7 +315,7 @@ Student                  System                    Lecturer
 - `404 Not Found`: Resource not found
 - `500 Internal Server Error`: Server error
 
-## 🎯 Design Patterns Used
+## Design Patterns Used
 
 ### 1. Repository Pattern
 
@@ -347,7 +347,7 @@ Student                  System                    Lecturer
 - JWT authentication filter
 - Spring Security filter chain
 
-## 🔍 Validation Strategy
+## Validation Strategy
 
 ### Input Validation
 
@@ -375,7 +375,7 @@ if (condition) {
 @UniqueConstraint(columnNames = {"student_id", "course_id"})
 ```
 
-## 📊 Performance Considerations
+## Performance Considerations
 
 ### 1. Lazy Loading
 
@@ -398,7 +398,7 @@ if (condition) {
 - JWT tokens (no server-side sessions)
 - Horizontal scaling friendly
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
 ### Unit Tests
 
@@ -417,7 +417,7 @@ if (condition) {
 - Swagger UI interactive testing
 - Thunder Client / Postman collections
 
-## 📈 Scalability
+## Scalability
 
 ### Horizontal Scaling
 
@@ -437,9 +437,9 @@ if (condition) {
 - Redis for distributed cache
 - Cache eligible courses, departments
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
-✅ **Implemented**:
+**Implemented**:
 
 - Password hashing (BCrypt)
 - JWT token authentication
@@ -448,7 +448,7 @@ if (condition) {
 - SQL injection prevention (JPA)
 - CORS configuration
 
-⚠️ **Recommendations**:
+**Recommendations**:
 
 - HTTPS in production
 - Rate limiting
@@ -457,7 +457,7 @@ if (condition) {
 - Password complexity rules
 - Token refresh mechanism
 
-## 📚 Technology Stack Summary
+## Technology Stack Summary
 
 | Layer         | Technology            |
 | ------------- | --------------------- |
@@ -474,9 +474,9 @@ if (condition) {
 
 **This architecture provides a solid foundation for:**
 
-- ✅ Secure user authentication
-- ✅ Role-based authorization
-- ✅ Clean separation of concerns
-- ✅ Maintainable codebase
-- ✅ Scalable design
-- ✅ RESTful API best practices
+- Secure user authentication
+- Role-based authorization
+- Clean separation of concerns
+- Maintainable codebase
+- Scalable design
+- RESTful API best practices

@@ -2,7 +2,7 @@
 
 A comprehensive Spring Boot application for managing student course enrollments with role-based access control.
 
-## 🚀 Features
+## Features
 
 - **JWT-Based Authentication**: Secure token-based authentication
 - **Role-Based Access Control**: Four distinct user roles (Student, Lecturer, HOD, Admin)
@@ -13,7 +13,7 @@ A comprehensive Spring Boot application for managing student course enrollments 
 - **Swagger Documentation**: Interactive API documentation
 - **PostgreSQL Database**: Using Neon serverless PostgreSQL
 
-## 👥 User Roles
+## User Roles
 
 ### Student
 
@@ -42,14 +42,14 @@ A comprehensive Spring Boot application for managing student course enrollments 
 - Override any actions
 - System-wide management
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Java 17** or higher
 - **Maven 3.6+**
 - **PostgreSQL Database** (Neon or local)
 - **VS Code** (recommended) or IntelliJ IDEA
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -101,14 +101,14 @@ java -jar target/student-allocation-system-1.0.0.jar
 
 The application will start on `http://localhost:8080`
 
-## 📚 API Documentation
+## API Documentation
 
 Once the application is running, access:
 
 - **Swagger UI**: http://localhost:8080/swagger-ui.html
 - **API Docs (JSON)**: http://localhost:8080/api-docs
 
-## 🔑 Authentication
+## Authentication
 
 ### Login
 
@@ -146,7 +146,7 @@ Include the JWT token in the Authorization header:
 Authorization: Bearer {your-token-here}
 ```
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### Public Endpoints
 
@@ -222,7 +222,7 @@ Authorization: Bearer {your-token-here}
 - `GET /api/admin/allocations/{id}` - Get allocation by ID
 - `POST /api/admin/allocations/process` - Process allocation
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### Tables
 
@@ -242,7 +242,7 @@ Authorization: Bearer {your-token-here}
 - HOD ↔ Department (one-to-one)
 - Semester ↔ Course
 
-## 🔒 Security
+## Security
 
 - **Password Encryption**: BCrypt with salt
 - **JWT Tokens**: HS256 algorithm
@@ -250,7 +250,7 @@ Authorization: Bearer {your-token-here}
 - **Role-Based Authorization**: Method-level security
 - **CSRF Protection**: Disabled (stateless JWT)
 
-## 💼 Business Rules
+## Business Rules
 
 1. Students cannot enroll twice in the same course
 2. Students must meet GPA requirements to enroll
@@ -260,7 +260,7 @@ Authorization: Bearer {your-token-here}
 6. Students can only drop approved courses
 7. Lecturers can only approve/deny requests for their courses
 
-## 🧪 Testing with Sample Data
+## Testing with Sample Data
 
 ### Create Admin User (SQL)
 
@@ -280,7 +280,7 @@ VALUES ('admin@example.com', 'admin', '$2a$10$XptfskLsT7Kdvng3zFyLU.ezFgQDOmvkV5
 6. **Login as Lecturer** → Approve/deny requests
 7. **Login as Student** → View enrolled courses, drop if needed
 
-## 🛠️ Development Tools
+## Development Tools
 
 ### Recommended VS Code Extensions
 
@@ -310,7 +310,7 @@ mvn package
 mvn clean install -DskipTests
 ```
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 src/
@@ -332,7 +332,7 @@ src/
 └── test/                        # Test files
 ```
 
-## 🚧 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 
@@ -354,18 +354,16 @@ server.port=8081
 2. Check token expiration time
 3. Verify Authorization header format: `Bearer {token}`
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for learning and development.
 
-## 👨‍💻 Author
+## Author
 
-Draka SAS Team
+Emmanuel Cobbinah
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 ---
-
-**Happy Coding! 🎉**
